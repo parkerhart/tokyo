@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -32,6 +33,7 @@ gem 'camaleon_cms'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -46,7 +48,7 @@ group :development do
   gem 'spring'
 end
 
-
+ruby "2.2.3"
 
 #################### Camaleon CMS include all gems for plugins and themes #################### 
 require './lib/plugin_routes' 
